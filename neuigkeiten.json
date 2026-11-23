@@ -1,0 +1,24 @@
+{
+  "_hinweis": "Neuen Eintrag OBEN in die Liste 'eintraege' einfügen. datum im Format JJJJ-MM-TT. bild relativ zur Website (z. B. assets/img/...). Texte je Sprache: de, tr, en. Nur Sicheres ankündigen.",
+  "eintraege": [
+    {
+      "datum": "[DATUM]",
+      "bild": "assets/img/profil-okey1.webp",
+      "bild_alt": {
+        "de": "Okey-Stein mit der Zahl 1",
+        "tr": "Üzerinde 1 yazan okey taşı",
+        "en": "Okey tile with the number 1"
+      },
+      "titel": {
+        "de": "Okey Friends kommt bald",
+        "tr": "Okey Friends yakında geliyor",
+        "en": "Okey Friends is coming soon"
+      },
+      "text": {
+        "de": "Türkisches Okey mit Freunden – gemütlich, lustig, kostenlos. Hier erfährst du, sobald es Neues gibt.",
+        "tr": "Arkadaşlarla Türk okeyi – keyifli, eğlenceli, ücretsiz. Yenilikler olduğunda burada öğreneceksin.",
+        "en": "Turkish Okey with friends – cosy, fun, free. You will find any news here."
+      }
+    }
+  ]
+}
