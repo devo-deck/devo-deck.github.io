@@ -7,6 +7,8 @@
   document.body.classList.add("lang-" + lang);
   var t = document.querySelector('meta[name="title-' + lang + '"]');
   if (t) document.title = t.content;
+  var d = document.querySelector('meta[name="desc-' + lang + '"]'), dm = document.querySelector('meta[name="description"]');
+  if (d && dm) dm.setAttribute("content", d.content);
   document.querySelectorAll("nav.lang a").forEach(function (a) {
     a.setAttribute("aria-current", a.getAttribute("data-set") === lang ? "true" : "false");
   });

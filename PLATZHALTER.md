@@ -10,11 +10,12 @@ Alle Stellen, an denen noch keine echten Daten stehen. Suche im Repository nach 
 
 | Platzhalter | Wo | Was eintragen |
 |---|---|---|
-| `[VOLLER NAME]` | `impressum.html` (Anschrift + „Verantwortlich für den Inhalt“, DE/TR/EN), `datenschutz.html` (Abschnitt 1 „Verantwortlicher“, DE/TR/EN) | Dein voller Vor- und Nachname (bzw. Firmenname mit Rechtsform, falls du eine Firma gründest) |
+| `[VOLLER NAME]` | `impressum.html` (Anschrift + „Verantwortlich für den Inhalt“, DE/TR/EN), `datenschutz.html` (Abschnitt 1 „Verantwortlicher“, DE/TR/EN), Fußzeile aller Seiten („© [JAHR] [VOLLER NAME]“) | Dein voller Vor- und Nachname (bzw. Firmenname mit Rechtsform, falls du eine Firma gründest) |
 | `[STRASSE HAUSNUMMER]` | `impressum.html`, `datenschutz.html` (Abschnitt 1), je DE/TR/EN | Ladungsfähige Anschrift: Straße und Hausnummer (kein Postfach) |
 | `[PLZ ORT]` | `impressum.html`, `datenschutz.html` (Abschnitt 1), je DE/TR/EN | Postleitzahl und Ort |
-| `[KONTAKT-E-MAIL]` | `impressum.html` (2× pro Sprache), `datenschutz.html` (Abschnitt 1 und 13), `konto-loeschen.html` („Ohne App“), `support.html` (oben) – jeweils DE/TR/EN, als Text **und** im Link `mailto:[KONTAKT-E-MAIL]` | Eine E-Mail-Adresse, die du regelmäßig liest, z. B. eine eigene Adresse auf deiner Domain |
+| `[KONTAKT-E-MAIL]` | `impressum.html` (2× pro Sprache), `datenschutz.html` (Abschnitt 1 und 14), `konto-loeschen.html` („Ohne App“), `support.html` (oben) – jeweils DE/TR/EN, als Text **und** im Link `mailto:[KONTAKT-E-MAIL]`; außerdem Link „Kontakt“ in der Fußzeile aller Seiten (`mailto:[KONTAKT-E-MAIL]`) | Eine E-Mail-Adresse, die du regelmäßig liest, z. B. eine eigene Adresse auf deiner Domain |
 | `[DATUM]` | `datenschutz.html`, Zeile „Stand: [DATUM]“ (DE/TR/EN) | Datum, ab dem die Datenschutzerklärung gilt, z. B. `01.12.2026` |
+| `[JAHR]` | Fußzeile aller Seiten („© [JAHR] [VOLLER NAME]“) | Jahr, z. B. `2026` |
 
 „Deutschland“ ist bereits eingetragen (TR: „Almanya“, EN: „Germany“).
 
@@ -22,14 +23,20 @@ Alle Stellen, an denen noch keine echten Daten stehen. Suche im Repository nach 
 
 | Platzhalter | Wo | Was eintragen |
 |---|---|---|
-| `[WERBENETZWERK – wird eingetragen]` | `datenschutz.html`, Abschnitt 7 „Werbung“ (DE/TR/EN) | Name und Anbieter des Werbenetzwerks für das Belohnungsvideo. Den roten Hinweiskasten darunter durch die Angaben des Netzwerks ersetzen (welche Daten es verarbeitet, Link zu seiner Datenschutzerklärung). Falls nötig, auch Abschnitt 9 (Rechtsgrundlage Einwilligung) und 11 (Drittland) ergänzen. |
+| `[WERBENETZWERK – wird eingetragen]` | `datenschutz.html`, Abschnitt 7 „Werbung“ (DE/TR/EN) | Name und Anbieter des Werbenetzwerks für das Belohnungsvideo. Den roten Hinweiskasten darunter durch die Angaben des Netzwerks ersetzen (welche Daten es verarbeitet, Link zu seiner Datenschutzerklärung). Falls nötig, auch Abschnitt 10 (Rechtsgrundlage Einwilligung) und 12 (Drittland) ergänzen. |
+
+## 2a. Sprach-Chat
+
+| Platzhalter | Wo | Was eintragen |
+|---|---|---|
+| `[MELDUNG – welche Daten übermittelt und wie lange gespeichert werden]` | `datenschutz.html`, Abschnitt 8 „Sprach-Chat (Unity Vivox)“, Satz „Wenn du einen Mitspieler meldest: …“ (DE/TR/EN) | Was beim Melden eines Mitspielers gespeichert bzw. übermittelt wird (z. B. Spieler-IDs, Grund, Zeitpunkt), an wen, und wie lange es aufbewahrt wird. Steht das nicht fest, den Satz mit dem Platzhalter vorerst stehen lassen und vor dem Start klären. |
 
 ## 3. Store-Links
 
 | Platzhalter | Wo | Was eintragen |
 |---|---|---|
-| `#` (Tooltip `[GOOGLE-PLAY-LINK]`) | Knopf „Google Play“ in `index.html` und `einladen/index.html` (je DE/TR/EN, also 6×) | `href="#"` durch den Link zur App in Google Play ersetzen, z. B. `https://play.google.com/store/apps/details?id=[PAKETNAME]`, und das `title`-Attribut entfernen |
-| `#` (Tooltip `[APP-STORE-LINK]`) | Knopf „App Store“ in `index.html` und `einladen/index.html` (je DE/TR/EN, also 6×) | `href="#"` durch den Link zur App im App Store ersetzen und das `title`-Attribut entfernen |
+| `#` (Tooltip `[GOOGLE-PLAY-LINK]`) | Knopf „Google Play“ in `index.html`, `einladen/index.html` und `regeln.html` (je DE/TR/EN, also 9×) | `href="#"` durch den Link zur App in Google Play ersetzen, z. B. `https://play.google.com/store/apps/details?id=[PAKETNAME]`, und das `title`-Attribut entfernen |
+| `#` (Tooltip `[APP-STORE-LINK]`) | Knopf „App Store“ in `index.html`, `einladen/index.html` und `regeln.html` (je DE/TR/EN, also 9×) | `href="#"` durch den Link zur App im App Store ersetzen und das `title`-Attribut entfernen |
 
 ## 4. Bilder
 
@@ -37,6 +44,19 @@ Alle Stellen, an denen noch keine echten Daten stehen. Suche im Repository nach 
 |---|---|
 | `logo.png` | Platzhalter-Logo (Stein mit „7“ und „LOGO“). Durch das echte Logo ersetzen, **gleicher Dateiname**, quadratisch, am besten 512 × 512 px. Wird auch als Browser-Symbol benutzt. |
 | `assets/screenshots/screenshot-1.png` … `screenshot-4.png` | Platzhalter. Durch echte Handy-Screenshots aus dem Spiel ersetzen (Hochformat, ca. 9 : 19,5, z. B. 780 × 1690 px), gleiche Dateinamen. Keine Waffen, Zigarren oder Aschenbecher auf den Bildern. |
+
+Bilder aus dem Spiel (schon echt, keine Platzhalter): `assets/img/profil-*.webp` (11 Profilbilder, Deko-Reihe der Startseite),
+`assets/img/kiste-legendaer-offen.webp` und `assets/img/liga-karte-legendaer.webp` (Bereich „Ligen und Kisten“).
+
+## 4a. Neuigkeiten (`neuigkeiten.json`)
+
+| Platzhalter | Wo | Was eintragen |
+|---|---|---|
+| `[DATUM]` | `neuigkeiten.json`, Eintrag „Okey Friends kommt bald“, Feld `datum` | Datum im Format `JJJJ-MM-TT`, z. B. `2026-12-01` (wird dann je Sprache schön angezeigt) |
+| Eintrag „Okey Friends kommt bald“ | `neuigkeiten.json` (Titel und Text je DE/TR/EN) | Platzhalter-Eintrag. Text anpassen oder durch den ersten echten Eintrag ersetzen. |
+
+Neuen Eintrag **oben** in `eintraege` einfügen (Felder `datum`, `bild`, `bild_alt`, `titel`, `text`, je `de`/`tr`/`en`).
+Nur ankündigen, was sicher ist (keine Wiederkehr von „Nur diese Woche“-Teilen versprechen).
 
 ## 5. App-Verknüpfung (Einladungslink)
 
@@ -54,12 +74,11 @@ Im Spiel selbst müssen die App Links (Android, Intent-Filter für `https://[DOM
 
 | Platzhalter | Wo | Was eintragen |
 |---|---|---|
-| `[DOMAIN]` | Datei `CNAME` (einzige Zeile) | Deine gekaufte Adresse **ohne** `https://` und ohne `/`, z. B. `okeyfriends.de` |
+| `[DOMAIN]` | Datei `CNAME` – **derzeit nicht vorhanden** (gelöscht, solange die Domain nicht gekauft ist) | Sobald die Domain gekauft ist: Datei `CNAME` im Hauptordner wieder anlegen mit einer Zeile = deine Adresse **ohne** `https://` und ohne `/`, z. B. `okeyfriends.de`. Alternativ legt GitHub sie selbst an, wenn du die Adresse unter **Settings → Pages → Custom domain** einträgst (siehe unten). |
 | `[DOMAIN]` | nur in dieser Anleitung und im Beispiel-Einladungslink `https://[DOMAIN]/einladen/?code=ABC123` | Die Seiten selbst nutzen nur relative Links, dort muss nichts geändert werden. Im Spiel muss der Einladungslink auf `https://[DOMAIN]/einladen/?code=…` zeigen. |
 
-> **Wichtig:** Solange noch keine Adresse gekauft ist, die Datei `CNAME` vor dem Mergen **löschen**.
-> Sonst versucht GitHub Pages, die ungültige Adresse `[DOMAIN]` zu benutzen. Ohne `CNAME` ist die Seite unter
-> `https://devo-deck.github.io/` erreichbar.
+> Die Datei `CNAME` wurde entfernt, weil die Domain noch nicht gekauft ist. Bis dahin ist die Seite unter
+> `https://devo-deck.github.io/` erreichbar (nach dem Merge). Mit der gekauften Domain `CNAME` wieder anlegen (siehe oben).
 
 ### DNS-Einträge bei deinem Domain-Anbieter
 
