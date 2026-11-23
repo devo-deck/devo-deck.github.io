@@ -1,0 +1,15 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": ["[TEAM_ID].[BUNDLE_ID]"],
+        "components": [
+          { "/": "/einladen/*", "comment": "Einladungslinks, z. B. /einladen/?code=ABC123" }
+        ],
+        "appID": "[TEAM_ID].[BUNDLE_ID]",
+        "paths": ["/einladen/*"]
+      }
+    ]
+  }
+}

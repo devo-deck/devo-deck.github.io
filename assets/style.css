@@ -1,0 +1,93 @@
+/* Okey Friends – reine Systemschrift, keine externen Dateien */
+:root{
+  --bg:#140707; --bg2:#1f0c0a; --card:#2a110d; --gold:#d9b25f; --gold2:#f1d48a;
+  --red:#b3261e; --red2:#e0473c; --text:#f5ebdc; --muted:#cdbba3; --line:rgba(217,178,95,.35);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;min-height:100vh;display:flex;flex-direction:column;
+  font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans",Arial,sans-serif;
+  font-size:17px;line-height:1.6;color:var(--text);
+  background:radial-gradient(ellipse at top,#3a120d 0%,var(--bg2) 38%,var(--bg) 75%) fixed,var(--bg)}
+a{color:var(--gold2)}
+a:hover,a:focus{color:#fff}
+:focus-visible{outline:3px solid var(--gold2);outline-offset:2px}
+.skip{position:absolute;left:-999px;top:0;background:var(--gold);color:#1a0806;padding:.5em 1em;z-index:10}
+.skip:focus{left:8px;top:8px}
+.wrap{width:100%;max-width:860px;margin:0 auto;padding:0 20px}
+/* Kopf */
+header.top{border-bottom:1px solid var(--line);background:rgba(20,7,7,.85)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-top:12px;padding-bottom:12px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--text);min-width:0}
+.brand img{width:44px;height:44px;border-radius:10px;border:1px solid var(--line);flex:none}
+.brand span{font-family:Georgia,"Times New Roman",serif;font-size:1.2rem;font-weight:700;letter-spacing:.02em;color:var(--gold2);white-space:nowrap}
+nav.lang{display:flex;gap:4px;flex:none}
+nav.lang a{display:inline-block;min-width:44px;min-height:44px;line-height:44px;text-align:center;border-radius:8px;
+  text-decoration:none;font-weight:700;font-size:.9rem;color:var(--muted);border:1px solid transparent}
+nav.lang a[aria-current="true"]{color:#1a0806;background:var(--gold)}
+nav.lang a:not([aria-current="true"]):hover{border-color:var(--line);color:var(--text)}
+/* Inhalt */
+main{flex:1;padding:28px 0 40px}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;color:var(--gold2);line-height:1.25}
+h1{font-size:2rem;margin:.2em 0 .4em}
+h2{font-size:1.35rem;margin:1.8em 0 .5em;padding-bottom:.25em;border-bottom:1px solid var(--line)}
+h3{font-size:1.1rem;margin:1.4em 0 .3em}
+p,li{color:var(--text)}
+.muted{color:var(--muted)}
+.ph{background:rgba(179,38,30,.28);color:#ffd9d4;border:1px dashed var(--red2);border-radius:4px;padding:0 .25em;
+  font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.92em;display:inline-block;max-width:100%;line-height:1.35;overflow-wrap:anywhere}
+.card{background:linear-gradient(180deg,rgba(58,20,14,.9),rgba(36,13,10,.9));border:1px solid var(--line);
+  border-radius:16px;padding:18px 20px;margin:16px 0}
+.note{border-left:4px solid var(--red2);background:rgba(179,38,30,.14);padding:12px 16px;border-radius:0 10px 10px 0;margin:16px 0}
+.ornament{display:block;margin:10px auto;width:220px;max-width:70%;height:auto;color:var(--gold)}
+/* Start */
+.hero{text-align:center;padding-top:12px}
+.hero .logo{width:120px;height:120px;border-radius:26px;border:2px solid var(--gold);box-shadow:0 0 0 6px rgba(217,178,95,.12),0 10px 30px rgba(0,0,0,.5)}
+.hero h1{font-size:2.5rem;margin:.35em 0 .1em;letter-spacing:.02em}
+.hero .claim{font-size:1.15rem;color:var(--text);max-width:34em;margin:.3em auto 1em}
+.stores{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin:20px 0}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:10px 20px;border-radius:12px;text-decoration:none;font-weight:700;
+  background:#0d0404;color:#fff;border:1.5px solid var(--gold);min-width:190px;justify-content:center}
+.btn small{display:block;font-weight:400;font-size:.72rem;color:var(--muted);line-height:1.1}
+.btn span{text-align:left;line-height:1.2}
+.btn svg{width:26px;height:26px;flex:none}
+.btn:hover,.btn:focus{background:var(--red);color:#fff}
+.shots{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:26px 0 8px}
+.shots figure{margin:0}
+.shots img{width:100%;height:auto;aspect-ratio:9/19.5;object-fit:cover;border-radius:18px;border:2px solid var(--line);background:var(--card)}
+.shots figcaption{font-size:.8rem;color:var(--muted);text-align:center;margin-top:4px}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px}
+.features .card{margin:0;text-align:center}
+.features h3{margin-top:0}
+/* Listen */
+ol.steps{counter-reset:s;list-style:none;padding:0}
+ol.steps li{counter-increment:s;position:relative;padding:8px 0 8px 48px;min-height:40px}
+ol.steps li::before{content:counter(s);position:absolute;left:0;top:6px;width:34px;height:34px;border-radius:50%;
+  background:var(--red);color:#fff;font-weight:700;text-align:center;line-height:34px;border:1px solid var(--gold)}
+details{background:var(--card);border:1px solid var(--line);border-radius:12px;margin:10px 0;padding:0 16px}
+summary{cursor:pointer;font-weight:700;padding:14px 0;color:var(--gold2);min-height:44px}
+details p{margin-top:0}
+.code{display:inline-block;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:1.6rem;letter-spacing:.15em;
+  background:#0d0404;border:2px dashed var(--gold);border-radius:12px;padding:6px 16px;color:var(--gold2);word-break:break-all}
+address{font-style:normal}
+/* Fuss */
+footer.bottom{border-top:1px solid var(--line);background:rgba(13,4,4,.9);padding:22px 0 28px;font-size:.95rem}
+footer.bottom ul{list-style:none;padding:0;margin:0 0 10px;display:flex;flex-wrap:wrap;gap:6px 18px}
+footer.bottom a{display:inline-block;padding:8px 0;color:var(--gold2)}
+footer.bottom p{color:var(--muted);margin:4px 0}
+/* Sprachen: Deutsch ist Standard, ohne JavaScript bleibt Deutsch sichtbar */
+body:not(.lang-tr):not(.lang-en) [data-l]:not([data-l="de"]){display:none!important}
+body.lang-tr [data-l]:not([data-l="tr"]){display:none!important}
+body.lang-en [data-l]:not([data-l="en"]){display:none!important}
+@media (max-width:700px){
+  body{font-size:16px}
+  h1{font-size:1.7rem}
+  .hero h1{font-size:2.1rem}
+  .shots{grid-template-columns:repeat(2,1fr)}
+  .features{grid-template-columns:1fr}
+  .brand span{font-size:1.05rem}
+  .brand img{width:38px;height:38px}
+  nav.lang a{min-width:40px}
+}
+@media (max-width:360px){ .brand span{display:none} }
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}

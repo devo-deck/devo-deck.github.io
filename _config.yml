@@ -1,0 +1,3 @@
+# Die Datei .nojekyll schaltet Jekyll ab, damit alle Dateien (auch /.well-known/) unverändert ausgeliefert werden.
+# Falls .nojekyll einmal entfernt wird, sorgt diese Zeile trotzdem dafür, dass der Ordner veröffentlicht wird.
+include: [".well-known"]
